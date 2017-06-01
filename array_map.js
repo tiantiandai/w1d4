@@ -3,15 +3,14 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
+
+const pythagorean = ({ x, y }) => Math.sqrt((x*x) + (y*y));
+
 var result = input.map(pythagorean);
 
-function pythagorean(item, index, array){
-  var x = item.x;
-  var y = item.y;
-  var result = Math.sqrt((x*x) + (y*y));
-
-  return result;
-}
+// function pythagorean({x, y}, index, array){
+//   return Math.sqrt((x*x) + (y*y));
+// }
 
 console.log(result[0] === 5);
 console.log(result[1] === 13);
